@@ -61,16 +61,16 @@ export const heroData:Hero={
     <>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
         Mesa, Arizona-based <strong className="text-stone-100">Full-Stack & Junior Developer</strong> passionate about building
-        innovative software solutions, optimizing user experiences, and continuously exploring emerging technologies.
+        innovative software solutions, optimizing user experiences, and continuously exploring emerging technologies. I'm a first-generation college student, driven to make the most of every opportunity in tech.
       </p>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        In my free time, I enjoy <strong className="text-stone-100">gaming, coding side projects, learning new technologies, and exploring AI and web3 innovations</strong> to stay ahead in the tech industry.
+        In my free time, I enjoy <strong className="text-stone-100">gaming and creating coding projects</strong> that enhance the gaming experience. I also love exploring AI, web3 innovations, and side projects that challenge me to learn and grow as a developer.
       </p>
     </>
   ),
   actions:[
     {href:'/assets/resume.pdf',text:'Resume',primary:true,Icon:ArrowDownTrayIcon},
-    {href:`#${SectionId.Contact}`,text:'Contact',primary:false},
+    {href:`#${SectionId.Contact}`,text:'Contact',primary:false}
   ],
 };
 

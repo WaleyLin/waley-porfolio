@@ -1,4 +1,4 @@
-import {FC, memo, useCallback, useMemo, useState} from 'react';
+import { FC, memo, useCallback, useMemo, useState } from 'react';
 
 interface FormData {
   name: string;
@@ -19,12 +19,12 @@ const ContactForm: FC = memo(() => {
   const [data, setData] = useState<FormData>(defaultData);
 
   const onChange = useCallback(
-    <T extends HTMLInputElement | HTMLTextAreaElement>(event: React.ChangeEvent<T>): void => {
-      const {name, value} = event.target;
-
-      const fieldData: Partial<FormData> = {[name]: value};
-
-      setData({...data, ...fieldData});
+    <T extends HTMLInputElement | HTMLTextAreaElement>(
+      event: React.ChangeEvent<T>,
+    ): void => {
+      const { name, value } = event.target;
+      const fieldData: Partial<FormData> = { [name]: value };
+      setData({ ...data, ...fieldData });
     },
     [data],
   );
@@ -32,20 +32,52 @@ const ContactForm: FC = memo(() => {
   const handleSendMessage = useCallback(
     async (event: React.FormEvent<HTMLFormElement>) => {
       event.preventDefault();
-      /**
-       * This is a good starting point to wire up your form submission logic
-       * */
-      console.log('Data to send: ', data);
+
+      try {
+        const response = await fetch('https://formspree.io/f/xanrjnlr', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify({
+            name: data.name,
+            email: data.email,
+            message: data.message,
+          }),
+        });
+
+        if (response.ok) {
+          alert('Message sent successfully!');
+          setData(defaultData); // Reset form
+        } else {
+          alert('Failed to send message. Please try again.');
+        }
+      } catch (error) {
+        console.error(error);
+        alert('An error occurred. Please try again.');
+      }
     },
-    [data],
+    [data, defaultData],
   );
 
   const inputClasses =
     'bg-neutral-700 border-0 focus:border-0 focus:outline-none focus:ring-1 focus:ring-orange-600 rounded-md placeholder:text-neutral-400 placeholder:text-sm text-neutral-200 text-sm';
 
   return (
-    <form className="grid min-h-[320px] grid-cols-1 gap-y-4" method="POST" onSubmit={handleSendMessage}>
-      <input className={inputClasses} name="name" onChange={onChange} placeholder="Name" required type="text" />
+    <form
+      className="grid min-h-[320px] grid-cols-1 gap-y-4"
+      method="POST"
+      onSubmit={handleSendMessage}
+    >
+      <input
+        className={inputClasses}
+        name="name"
+        onChange={onChange}
+        placeholder="Name"
+        required
+        type="text"
+        value={data.name}
+      />
       <input
         autoComplete="email"
         className={inputClasses}
@@ -54,6 +86,7 @@ const ContactForm: FC = memo(() => {
         placeholder="Email"
         required
         type="email"
+        value={data.email}
       />
       <textarea
         className={inputClasses}
@@ -63,11 +96,13 @@ const ContactForm: FC = memo(() => {
         placeholder="Message"
         required
         rows={6}
+        value={data.message}
       />
       <button
         aria-label="Submit contact form"
         className="w-max rounded-full border-2 border-orange-600 bg-stone-900 px-4 py-2 text-sm font-medium text-white shadow-md outline-none hover:bg-stone-800 focus:ring-2 focus:ring-orange-600 focus:ring-offset-2 focus:ring-offset-stone-800"
-        type="submit">
+        type="submit"
+      >
         Send Message
       </button>
     </form>

@@ -44,8 +44,8 @@ import {
  * Page meta data
  */
 export const homePageMeta: HomepageMeta = {
-  title: 'React Resume Template',
-  description: "Example site built with Tim Baker's react resume template",
+  title: 'Waley Lin Resume',
+  description: 'Portfolio and resume of Waley Lin, Full-Stack Developer and tech enthusiast',
 };
 
 /**
@@ -69,18 +69,15 @@ export type SectionId = (typeof SectionId)[keyof typeof SectionId];
  */
 export const heroData: Hero = {
   imageSrc: heroImage,
-  name: `I'm Tim Baker.`,
+  name: `I'm Waley Lin.`,
   description: (
     <>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        I'm a Victoria based <strong className="text-stone-100">Full Stack Software Engineer</strong>, currently working
-        at <strong className="text-stone-100">Instant Domains</strong> helping build a modern, mobile-first, domain
-        registrar and site builder.
+        Mesa, Arizona-based <strong className="text-stone-100">Full-Stack Developer</strong> passionate about building
+        innovative software solutions and continuously learning new technologies.
       </p>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        In my free time time, you can catch me training in <strong className="text-stone-100">Muay Thai</strong>,
-        plucking my <strong className="text-stone-100">banjo</strong>, or exploring beautiful{' '}
-        <strong className="text-stone-100">Vancouver Island</strong>.
+        In my free time, I enjoy <strong className="text-stone-100">gaming</strong> and exploring new tech and tools.
       </p>
     </>
   ),
@@ -104,16 +101,14 @@ export const heroData: Hero = {
  */
 export const aboutData: About = {
   profileImageSrc: profilepic,
-  description: `Use this bio section as your way of describing yourself and saying what you do, what technologies you like
-  to use or feel most comfortable with, describing your personality, or whatever else you feel like throwing
-  in.`,
+  description: `I am a motivated Full-Stack Developer with experience in mobile app and web development. I enjoy building scalable and efficient applications while constantly expanding my knowledge in new technologies.`,
   aboutItems: [
-    {label: 'Location', text: 'Victoria, BC', Icon: MapIcon},
-    {label: 'Age', text: '29', Icon: CalendarIcon},
-    {label: 'Nationality', text: 'Canadian / Irish', Icon: FlagIcon},
-    {label: 'Interests', text: 'Motorcycles, Muay Thai, Banjos', Icon: SparklesIcon},
-    {label: 'Study', text: 'University of Victoria', Icon: AcademicCapIcon},
-    {label: 'Employment', text: 'Instant Domains, inc.', Icon: BuildingOffice2Icon},
+    { label: 'Location', text: 'Mesa, Arizona', Icon: MapIcon },
+    { label: 'Age', text: '22', Icon: CalendarIcon },
+    { label: 'Nationality', text: 'American', Icon: FlagIcon },
+    { label: 'Interests', text: 'Gaming, Learning New Technologies', Icon: SparklesIcon },
+    { label: 'Study', text: 'Arizona State University (B.S. Computer Science, Honors)', Icon: AcademicCapIcon },
+    { label: 'Employment', text: 'Scottsdale Fairmont Princess, Raising Cane\'s', Icon: BuildingOffice2Icon },
   ],
 };
 
@@ -122,71 +117,38 @@ export const aboutData: About = {
  */
 export const skills: SkillGroup[] = [
   {
-    name: 'Spoken languages',
+    name: 'Programming Languages',
     skills: [
-      {
-        name: 'English',
-        level: 10,
-      },
-      {
-        name: 'French',
-        level: 4,
-      },
-      {
-        name: 'Spanish',
-        level: 3,
-      },
+      { name: 'Python', level: 9 },
+      { name: 'JavaScript', level: 8 },
+      { name: 'TypeScript', level: 7 },
+      { name: 'Java', level: 7 },
+      { name: 'C++', level: 6 },
+      { name: 'SQL', level: 7 },
+      { name: 'HTML', level: 8 },
+      { name: 'CSS', level: 7 },
+      { name: 'MATLAB', level: 5 },
+      { name: 'Scheme', level: 4 },
+      { name: 'Prolog', level: 4 },
     ],
   },
   {
-    name: 'Frontend development',
+    name: 'Technologies & Frameworks',
     skills: [
-      {
-        name: 'React',
-        level: 9,
-      },
-      {
-        name: 'Typescript',
-        level: 7,
-      },
-      {
-        name: 'GraphQL',
-        level: 6,
-      },
-    ],
-  },
-  {
-    name: 'Backend development',
-    skills: [
-      {
-        name: 'Node.js',
-        level: 8,
-      },
-      {
-        name: 'Rust',
-        level: 5,
-      },
-      {
-        name: 'Golang',
-        level: 4,
-      },
-    ],
-  },
-  {
-    name: 'Mobile development',
-    skills: [
-      {
-        name: 'React Native',
-        level: 9,
-      },
-      {
-        name: 'Flutter',
-        level: 4,
-      },
-      {
-        name: 'Swift',
-        level: 3,
-      },
+      { name: 'React.js', level: 9 },
+      { name: 'React Native', level: 9 },
+      { name: 'Node.js', level: 8 },
+      { name: 'Express.js', level: 7 },
+      { name: 'FastAPI', level: 6 },
+      { name: 'Flask', level: 5 },
+      { name: 'Firebase', level: 8 },
+      { name: 'Expo', level: 8 },
+      { name: 'Docker', level: 6 },
+      { name: 'Git & GitHub', level: 9 },
+      { name: 'Render / Vercel', level: 7 },
+      { name: 'SQLite / MongoDB (basic)', level: 6 },
+      { name: 'VS Code / Jupyter Notebook', level: 9 },
+      { name: 'Data Analysis (Pandas, NumPy, Matplotlib, Seaborn)', level: 7 },
     ],
   },
 ];
@@ -196,111 +158,59 @@ export const skills: SkillGroup[] = [
  */
 export const portfolioItems: PortfolioItem[] = [
   {
-    title: 'Project title 1',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
+    title: 'The Virtual Sommelier',
+    description: 'AI Chatbot for interactive beverage learning built as an honors thesis project at ASU.',
+    url: 'BLANK',
     image: porfolioImage1,
   },
   {
-    title: 'Project title 2',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
+    title: 'Pet Image Classifier',
+    description: 'CNN-based PyTorch project to classify pet images with 87% accuracy.',
+    url: 'BLANK',
     image: porfolioImage2,
   },
-  {
-    title: 'Project title 3',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
-    image: porfolioImage3,
-  },
-  {
-    title: 'Project title 4',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
-    image: porfolioImage4,
-  },
-  {
-    title: 'Project title 5',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
-    image: porfolioImage5,
-  },
-  {
-    title: 'Project title 6',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
-    image: porfolioImage6,
-  },
-  {
-    title: 'Project title 7',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
-    image: porfolioImage7,
-  },
-  {
-    title: 'Project title 8',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
-    image: porfolioImage8,
-  },
-  {
-    title: 'Project title 9',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
-    image: porfolioImage9,
-  },
-  {
-    title: 'Project title 10',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
-    image: porfolioImage10,
-  },
-  {
-    title: 'Project title 11',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
-    image: porfolioImage11,
-  },
+  // Fill the rest with placeholders
+  { title: 'Project title 3', description: 'BLANK', url: 'BLANK', image: porfolioImage3 },
+  { title: 'Project title 4', description: 'BLANK', url: 'BLANK', image: porfolioImage4 },
+  { title: 'Project title 5', description: 'BLANK', url: 'BLANK', image: porfolioImage5 },
+  { title: 'Project title 6', description: 'BLANK', url: 'BLANK', image: porfolioImage6 },
+  { title: 'Project title 7', description: 'BLANK', url: 'BLANK', image: porfolioImage7 },
+  { title: 'Project title 8', description: 'BLANK', url: 'BLANK', image: porfolioImage8 },
+  { title: 'Project title 9', description: 'BLANK', url: 'BLANK', image: porfolioImage9 },
+  { title: 'Project title 10', description: 'BLANK', url: 'BLANK', image: porfolioImage10 },
+  { title: 'Project title 11', description: 'BLANK', url: 'BLANK', image: porfolioImage11 },
 ];
 
 /**
- * Resume section -- TODO: Standardize resume contact format or offer MDX
+ * Resume section
  */
 export const education: TimelineItem[] = [
   {
-    date: 'April 2007',
-    location: 'Clown college',
-    title: 'Masters in Beer tasting',
-    content: <p>Describe your experience at school, what you learned, what useful skills you have acquired etc.</p>,
-  },
-  {
-    date: 'March 2003',
-    location: 'School of Business',
-    title: 'What did you study 101',
-    content: <p>Describe your experience at school, what you learned, what useful skills you have acquired etc.</p>,
+    date: 'August 2021 - May 2025',
+    location: 'Arizona State University, Tempe, AZ',
+    title: 'B.S. Computer Science, Honors (Barrett, The Honors College)',
+    content: <p>Graduated with GPA 3.72. Completed thesis on AI chatbot for beverage learning, integrating OpenAI GPT and Firebase.</p>,
   },
 ];
 
 export const experience: TimelineItem[] = [
   {
-    date: 'March 2010 - Present',
-    location: 'Awesome Development Company',
-    title: 'Senior UX Engineer',
+    date: 'Aug 2024 - May 2025',
+    location: 'Scottsdale Fairmont Princess, Scottsdale, AZ',
+    title: 'Full-Stack Developer Lead',
     content: (
       <p>
-        Describe work, special projects, notable achievements, what technologies you have been working with, and
-        anything else that would be useful for an employer to know.
+        Led full-stack development of a mobile learning app using React Native, Expo, and Firebase. Directed wireframing, UI prototyping, database design, and beta testing. Released on the App Store for real users.
       </p>
     ),
   },
   {
-    date: 'March 2007 - February 2010',
-    location: 'Garage Startup Studio',
-    title: 'Junior bug fixer',
+    date: '2021 - Present',
+    location: 'Raising Cane\'s Chicken Fingers',
+    title: 'Certified Trainer',
     content: (
       <p>
-        Describe work, special projects, notable achievements, what technologies you have been working with, and
-        anything else that would be useful for an employer to know.
+        Coordinated workflows, executed quality checks, trained new team members, and assisted with operational troubleshooting and process tracking.
       </p>
     ),
   },
@@ -312,52 +222,24 @@ export const experience: TimelineItem[] = [
 export const testimonial: TestimonialSection = {
   imageSrc: testimonialImage,
   testimonials: [
-    {
-      name: 'John Doe',
-      text: 'Use this as an opportunity to promote what it is like to work with you. High value testimonials include ones from current or past co-workers, managers, or from happy clients.',
-      image: 'https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/169.jpg',
-    },
-    {
-      name: 'Jane Doe',
-      text: 'Here you should write some nice things that someone has said about you. Encourage them to be specific and include important details (notes about a project you were on together, impressive quality produced, etc).',
-      image: 'https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/14.jpg',
-    },
-    {
-      name: 'Someone else',
-      text: 'Add several of these, and keep them as fresh as possible, but be sure to focus on quality testimonials with strong highlights of your skills/work ethic.',
-      image: 'https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/69.jpg',
-    },
+    { name: 'BLANK', text: 'BLANK', image: 'BLANK' },
+    { name: 'BLANK', text: 'BLANK', image: 'BLANK' },
+    { name: 'BLANK', text: 'BLANK', image: 'BLANK' },
   ],
 };
 
 /**
  * Contact section
  */
-
 export const contact: ContactSection = {
   headerText: 'Get in touch.',
-  description: 'Here is a good spot for a message to your readers to let them know how best to reach out to you.',
+  description: 'Feel free to reach out via email, phone, or social media links below.',
   items: [
-    {
-      type: ContactType.Email,
-      text: 'reachout@timbaker.me',
-      href: 'mailto:reachout@timbaker.me',
-    },
-    {
-      type: ContactType.Location,
-      text: 'Victoria BC, Canada',
-      href: 'https://www.google.ca/maps/place/Victoria,+BC/@48.4262362,-123.376775,14z',
-    },
-    {
-      type: ContactType.Instagram,
-      text: '@tbakerx',
-      href: 'https://www.instagram.com/tbakerx/',
-    },
-    {
-      type: ContactType.Github,
-      text: 'tbakerx',
-      href: 'https://github.com/tbakerx',
-    },
+    { type: ContactType.Email, text: 'waaleylin@gmail.com', href: 'mailto:waaleylin@gmail.com' },
+    { type: ContactType.Location, text: 'Mesa, AZ', href: 'https://www.google.com/maps/place/Mesa,+AZ/' },
+    { type: ContactType.Github, text: 'WaleyLin', href: 'https://github.com/WaleyLin' },
+    { type: ContactType.LinkedIn, text: 'Waley Lin', href: 'https://www.linkedin.com/in/waleylin2003' },
+    { type: ContactType.Instagram, text: 'BLANK', href: 'BLANK' },
   ],
 };
 
@@ -365,9 +247,9 @@ export const contact: ContactSection = {
  * Social items
  */
 export const socialLinks: Social[] = [
-  {label: 'Github', Icon: GithubIcon, href: 'https://github.com/tbakerx'},
-  {label: 'Stack Overflow', Icon: StackOverflowIcon, href: 'https://stackoverflow.com/users/8553186/tim-baker'},
-  {label: 'LinkedIn', Icon: LinkedInIcon, href: 'https://www.linkedin.com/in/timbakerx/'},
-  {label: 'Instagram', Icon: InstagramIcon, href: 'https://www.instagram.com/reactresume/'},
-  {label: 'Twitter', Icon: TwitterIcon, href: 'https://twitter.com/TimBakerx'},
+  { label: 'Github', Icon: GithubIcon, href: 'https://github.com/WaleyLin' },
+  { label: 'Stack Overflow', Icon: StackOverflowIcon, href: 'BLANK' },
+  { label: 'LinkedIn', Icon: LinkedInIcon, href: 'https://www.linkedin.com/in/waleylin2003' },
+  { label: 'Instagram', Icon: InstagramIcon, href: 'BLANK' },
+  { label: 'Twitter', Icon: TwitterIcon, href: 'BLANK' },
 ];

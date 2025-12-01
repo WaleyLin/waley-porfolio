@@ -84,7 +84,7 @@ export const aboutData:About={
   aboutItems:[
     {label:'Location',text:'Mesa, Arizona',Icon:MapIcon},
     {label:'Age',text:'22',Icon:CalendarIcon},
-    {label:'Nationality',text:'American',Icon:FlagIcon},
+    {label:'Nationality',text:'Asian American (Chinese)',Icon:FlagIcon},
     {label:'Interests',text:'Gaming, Learning New Technologies, AI, Web3, Open-Source Contribution',Icon:SparklesIcon},
     {label:'Study',text:'Arizona State University (B.S. Computer Science, Honors)',Icon:AcademicCapIcon},
     {label:'Employment',text:"Scottsdale Fairmont Princess, Raising Cane's, In-N-Out",Icon:BuildingOffice2Icon},

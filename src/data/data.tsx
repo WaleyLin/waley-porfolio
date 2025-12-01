@@ -69,7 +69,7 @@ export const heroData:Hero={
     </>
   ),
   actions:[
-    {href:'/assets/resume.pdf',text:'Resume',primary:true,Icon:ArrowDownTrayIcon,download:true},
+    {href:'/assets/resume.pdf',text:'Resume',primary:true,Icon:ArrowDownTrayIcon},
     {href:`#${SectionId.Contact}`,text:'Contact',primary:false},
   ],
 };

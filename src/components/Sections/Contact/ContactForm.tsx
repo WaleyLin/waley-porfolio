@@ -1,4 +1,4 @@
-import { FC, memo, useCallback, useMemo, useState } from 'react';
+import {FC, memo, useCallback, useMemo, useState} from 'react';
 
 interface FormData {
   name: string;
@@ -7,24 +7,19 @@ interface FormData {
 }
 
 const ContactForm: FC = memo(() => {
-  const defaultData = useMemo(
-    () => ({
-      name: '',
-      email: '',
-      message: '',
-    }),
-    [],
-  );
+  const defaultData = useMemo(() => ({
+    name: '',
+    email: '',
+    message: '',
+  }), []);
 
   const [data, setData] = useState<FormData>(defaultData);
 
   const onChange = useCallback(
-    <T extends HTMLInputElement | HTMLTextAreaElement>(
-      event: React.ChangeEvent<T>,
-    ): void => {
-      const { name, value } = event.target;
-      const fieldData: Partial<FormData> = { [name]: value };
-      setData({ ...data, ...fieldData });
+    <T extends HTMLInputElement | HTMLTextAreaElement>(event: React.ChangeEvent<T>) => {
+      const {name, value} = event.target;
+      const fieldData: Partial<FormData> = {[name]: value};
+      setData({...data, ...fieldData});
     },
     [data],
   );
@@ -32,13 +27,10 @@ const ContactForm: FC = memo(() => {
   const handleSendMessage = useCallback(
     async (event: React.FormEvent<HTMLFormElement>) => {
       event.preventDefault();
-
       try {
         const response = await fetch('https://formspree.io/f/xanrjnlr', {
           method: 'POST',
-          headers: {
-            'Content-Type': 'application/json',
-          },
+          headers: {'Content-Type': 'application/json'},
           body: JSON.stringify({
             name: data.name,
             email: data.email,
@@ -48,7 +40,7 @@ const ContactForm: FC = memo(() => {
 
         if (response.ok) {
           alert('Message sent successfully!');
-          setData(defaultData); // Reset form
+          setData(defaultData);
         } else {
           alert('Failed to send message. Please try again.');
         }

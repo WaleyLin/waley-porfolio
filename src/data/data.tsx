@@ -26,7 +26,6 @@ import porfolioImage9 from'../images/portfolio/portfolio-9.jpg';
 import porfolioImage10 from'../images/portfolio/portfolio-10.jpg';
 import porfolioImage11 from'../images/portfolio/portfolio-11.jpg';
 import profilepic from'../images/profilepic.jpg';
-import testimonialImage from'../images/testimonial.webp';
 import{
   About,
   ContactSection,
@@ -36,7 +35,6 @@ import{
   PortfolioItem,
   SkillGroup,
   Social,
-  TestimonialSection,
   TimelineItem,
 }from'./dataDef';
 
@@ -53,7 +51,6 @@ export const SectionId={
   Resume:'resume',
   Skills:'skills',
   Stats:'stats',
-  Testimonials:'testimonials',
 }as const;
 
 export type SectionId=(typeof SectionId)[keyof typeof SectionId];
@@ -152,15 +149,6 @@ export const experience:TimelineItem[]=[
   {date:'2021 - Present',location:"Raising Cane's Chicken Fingers",title:'Certified Trainer',content:<p>Coordinated workflows across prep stations, executed quality checks, trained new team members, assisted with operational troubleshooting, and tracked process efficiency.</p>},
   {date:'June 2025 - Present',location:'In-N-Out',title:'Team Member',content:<p>Providing high-quality customer service, maintaining operational efficiency, and assisting in staff training and onboarding.</p>},
 ];
-
-export const testimonial:TestimonialSection={
-  imageSrc:testimonialImage,
-  testimonials:[
-    {name:'',text:'',image:''},
-    {name:'',text:'',image:''},
-    {name:'',text:'',image:''},
-  ],
-};
 
 export const contact:ContactSection={
   headerText:'Get in touch.',

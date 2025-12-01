@@ -26,7 +26,6 @@ import porfolioImage9 from '../images/portfolio/portfolio-9.jpg';
 import porfolioImage10 from '../images/portfolio/portfolio-10.jpg';
 import porfolioImage11 from '../images/portfolio/portfolio-11.jpg';
 import profilepic from '../images/profilepic.jpg';
-import testimonialImage from '../images/testimonial.webp';
 import {
   About,
   ContactSection,
@@ -36,7 +35,6 @@ import {
   PortfolioItem,
   SkillGroup,
   Social,
-  TestimonialSection,
   TimelineItem,
 } from './dataDef';
 
@@ -59,7 +57,6 @@ export const SectionId = {
   Resume: 'resume',
   Skills: 'skills',
   Stats: 'stats',
-  Testimonials: 'testimonials',
 } as const;
 
 export type SectionId = (typeof SectionId)[keyof typeof SectionId];
@@ -73,11 +70,11 @@ export const heroData: Hero = {
   description: (
     <>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        Mesa, Arizona-based <strong className="text-stone-100">Full-Stack Developer</strong> passionate about building
-        innovative software solutions and continuously learning new technologies.
+        Mesa, Arizona-based <strong className="text-stone-100">Full-Stack & Junior Developer</strong> passionate about building
+        innovative software solutions, optimizing user experiences, and continuously exploring emerging technologies.
       </p>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        In my free time, I enjoy <strong className="text-stone-100">gaming</strong> and exploring new tech and tools.
+        In my free time, I enjoy <strong className="text-stone-100">gaming, coding side projects, learning new technologies, and exploring AI and web3 innovations</strong> to stay ahead in the tech industry.
       </p>
     </>
   ),
@@ -93,14 +90,14 @@ export const heroData: Hero = {
 export const aboutData: About = {
   profileImageSrc: profilepic,
   description:
-    'I am a motivated Full-Stack Developer with experience in mobile app and web development. I enjoy building scalable and efficient applications while constantly expanding my knowledge in new technologies.',
+    'I am a motivated Full-Stack Developer with experience in mobile app and web development. I enjoy building scalable and efficient applications while constantly expanding my knowledge in emerging technologies.',
   aboutItems: [
     {label: 'Location', text: 'Mesa, Arizona', Icon: MapIcon},
     {label: 'Age', text: '22', Icon: CalendarIcon},
     {label: 'Nationality', text: 'American', Icon: FlagIcon},
-    {label: 'Interests', text: 'Gaming, Learning New Technologies', Icon: SparklesIcon},
+    {label: 'Interests', text: 'Gaming, Learning New Technologies, AI, Web3, Open-Source Contribution', Icon: SparklesIcon},
     {label: 'Study', text: 'Arizona State University (B.S. Computer Science, Honors)', Icon: AcademicCapIcon},
-    {label: 'Employment', text: "Scottsdale Fairmont Princess, Raising Cane's", Icon: BuildingOffice2Icon},
+    {label: 'Employment', text: "Scottsdale Fairmont Princess, Raising Cane's, In-N-Out", Icon: BuildingOffice2Icon},
   ],
 };
 
@@ -166,25 +163,14 @@ export const portfolioItems: PortfolioItem[] = [
  * Resume section
  */
 export const education: TimelineItem[] = [
-  {date: 'August 2021 - May 2025', location: 'Arizona State University, Tempe, AZ', title: 'B.S. Computer Science, Honors (Barrett, The Honors College)', content: <p>Graduated with GPA 3.72. Completed thesis on AI chatbot for beverage learning, integrating OpenAI GPT and Firebase.</p>},
+  {date: 'August 2021 - May 2025', location: 'Arizona State University, Tempe, AZ', title: 'B.S. Computer Science, Honors (Barrett, The Honors College)', content: <p>GPA: 3.72. Completed honors thesis on AI chatbot for beverage learning integrating OpenAI GPT and Firebase.</p>},
 ];
 
 export const experience: TimelineItem[] = [
-  {date: 'Aug 2024 - May 2025', location: 'Scottsdale Fairmont Princess, Scottsdale, AZ', title: 'Full-Stack Developer Lead', content: <p>Led full-stack development of a mobile learning app using React Native, Expo, and Firebase. Directed wireframing, UI prototyping, database design, and beta testing. Released on the App Store for real users.</p>},
-  {date: '2021 - Present', location: "Raising Cane's Chicken Fingers", title: 'Certified Trainer', content: <p>Coordinated workflows, executed quality checks, trained new team members, and assisted with operational troubleshooting and process tracking.</p>},
+  {date: 'Aug 2024 - May 2025', location: 'Scottsdale Fairmont Princess, Scottsdale, AZ', title: 'Full-Stack Developer Lead', content: <p>Led full-stack development of a mobile learning app focused on beverage and food pairing education. Built frontend using React Native and Expo, backend with Firebase. Directed wireframing, UI prototyping, database design, and feature implementation. Managed deployment, debugging, and cross-platform optimization. Released on the App Store for real users.</p>},
+  {date: '2021 - Present', location: "Raising Cane's Chicken Fingers", title: 'Certified Trainer', content: <p>Coordinated workflows across prep stations, executed quality checks, trained new team members, assisted with operational troubleshooting, and tracked process efficiency.</p>},
+  {date: 'June 2025 - Present', location: 'In-N-Out', title: 'Team Member', content: <p>Providing high-quality customer service, maintaining operational efficiency, and assisting in staff training and onboarding.</p>},
 ];
-
-/**
- * Testimonial section
- */
-export const testimonial: TestimonialSection = {
-  imageSrc: testimonialImage,
-  testimonials: [
-    {name: 'BLANK', text: 'BLANK', image: 'BLANK'},
-    {name: 'BLANK', text: 'BLANK', image: 'BLANK'},
-    {name: 'BLANK', text: 'BLANK', image: 'BLANK'},
-  ],
-};
 
 /**
  * Contact section
@@ -197,7 +183,7 @@ export const contact: ContactSection = {
     {type: ContactType.Location, text: 'Mesa, AZ', href: 'https://www.google.com/maps/place/Mesa,+AZ/'},
     {type: ContactType.Github, text: 'WaleyLin', href: 'https://github.com/WaleyLin'},
     {type: ContactType.LinkedIn, text: 'Waley Lin', href: 'https://www.linkedin.com/in/waleylin2003'},
-    {type: ContactType.Instagram, text: 'BLANK', href: 'BLANK'},
+    {type: ContactType.Instagram, text: 'waaleylin', href: 'https://www.instagram.com/waaleylin/'},
   ],
 };
 
@@ -208,6 +194,6 @@ export const socialLinks: Social[] = [
   {label: 'Github', Icon: GithubIcon, href: 'https://github.com/WaleyLin'},
   {label: 'Stack Overflow', Icon: StackOverflowIcon, href: 'BLANK'},
   {label: 'LinkedIn', Icon: LinkedInIcon, href: 'https://www.linkedin.com/in/waleylin2003'},
-  {label: 'Instagram', Icon: InstagramIcon, href: 'BLANK'},
+  {label: 'Instagram', Icon: InstagramIcon, href: 'https://www.instagram.com/waaleylin/'},
   {label: 'Twitter', Icon: TwitterIcon, href: 'BLANK'},
 ];

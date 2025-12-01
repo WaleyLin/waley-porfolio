@@ -45,7 +45,8 @@ import {
  */
 export const homePageMeta: HomepageMeta = {
   title: 'Waley Lin Resume',
-  description: 'Portfolio and resume of Waley Lin, Full-Stack Developer and tech enthusiast',
+  description:
+    'Portfolio and resume of Waley Lin, Full-Stack Developer and tech enthusiast',
 };
 
 /**
@@ -101,14 +102,15 @@ export const heroData: Hero = {
  */
 export const aboutData: About = {
   profileImageSrc: profilepic,
-  description: `I am a motivated Full-Stack Developer with experience in mobile app and web development. I enjoy building scalable and efficient applications while constantly expanding my knowledge in new technologies.`,
+  description:
+    'I am a motivated Full-Stack Developer with experience in mobile app and web development. I enjoy building scalable and efficient applications while constantly expanding my knowledge in new technologies.',
   aboutItems: [
     { label: 'Location', text: 'Mesa, Arizona', Icon: MapIcon },
     { label: 'Age', text: '22', Icon: CalendarIcon },
     { label: 'Nationality', text: 'American', Icon: FlagIcon },
     { label: 'Interests', text: 'Gaming, Learning New Technologies', Icon: SparklesIcon },
     { label: 'Study', text: 'Arizona State University (B.S. Computer Science, Honors)', Icon: AcademicCapIcon },
-    { label: 'Employment', text: 'Scottsdale Fairmont Princess, Raising Cane\'s', Icon: BuildingOffice2Icon },
+    { label: 'Employment', text: "Scottsdale Fairmont Princess, Raising Cane's", Icon: BuildingOffice2Icon },
   ],
 };
 
@@ -169,7 +171,6 @@ export const portfolioItems: PortfolioItem[] = [
     url: 'BLANK',
     image: porfolioImage2,
   },
-  // Fill the rest with placeholders
   { title: 'Project title 3', description: 'BLANK', url: 'BLANK', image: porfolioImage3 },
   { title: 'Project title 4', description: 'BLANK', url: 'BLANK', image: porfolioImage4 },
   { title: 'Project title 5', description: 'BLANK', url: 'BLANK', image: porfolioImage5 },
@@ -189,7 +190,12 @@ export const education: TimelineItem[] = [
     date: 'August 2021 - May 2025',
     location: 'Arizona State University, Tempe, AZ',
     title: 'B.S. Computer Science, Honors (Barrett, The Honors College)',
-    content: <p>Graduated with GPA 3.72. Completed thesis on AI chatbot for beverage learning, integrating OpenAI GPT and Firebase.</p>,
+    content: (
+      <p>
+        Graduated with GPA 3.72. Completed thesis on AI chatbot for beverage learning, integrating OpenAI GPT and
+        Firebase.
+      </p>
+    ),
   },
 ];
 
@@ -200,17 +206,19 @@ export const experience: TimelineItem[] = [
     title: 'Full-Stack Developer Lead',
     content: (
       <p>
-        Led full-stack development of a mobile learning app using React Native, Expo, and Firebase. Directed wireframing, UI prototyping, database design, and beta testing. Released on the App Store for real users.
+        Led full-stack development of a mobile learning app using React Native, Expo, and Firebase. Directed wireframing,
+        UI prototyping, database design, and beta testing. Released on the App Store for real users.
       </p>
     ),
   },
   {
     date: '2021 - Present',
-    location: 'Raising Cane\'s Chicken Fingers',
+    location: "Raising Cane's Chicken Fingers",
     title: 'Certified Trainer',
     content: (
       <p>
-        Coordinated workflows, executed quality checks, trained new team members, and assisted with operational troubleshooting and process tracking.
+        Coordinated workflows, executed quality checks, trained new team members, and assisted with operational
+        troubleshooting and process tracking.
       </p>
     ),
   },

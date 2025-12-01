@@ -125,17 +125,17 @@ export const skills:SkillGroup[]=[
   },
 ];
 
-export const portfolioItems:PortfolioItem[]=[
-  {title:'The Virtual Sommelier',description:'AI Chatbot for interactive beverage learning built as an honors thesis project at ASU.',url:'BLANK',image:porfolioImage1},
-  {title:'Pet Image Classifier',description:'CNN-based PyTorch project to classify pet images with 87% accuracy.',url:'BLANK',image:porfolioImage2},
-  {title:'Project title 3',description:'BLANK',url:'BLANK',image:porfolioImage3},
-  {title:'Project title 4',description:'BLANK',url:'BLANK',image:porfolioImage4},
-  {title:'Project title 5',description:'BLANK',url:'BLANK',image:porfolioImage5},
-  {title:'Project title 6',description:'BLANK',url:'BLANK',image:porfolioImage6},
-  {title:'Project title 7',description:'BLANK',url:'BLANK',image:porfolioImage7},
-  {title:'Project title 8',description:'BLANK',url:'BLANK',image:porfolioImage8},
-  {title:'Project title 9',description:'BLANK',url:'BLANK',image:porfolioImage9},
-  {title:'Project title 10',description:'BLANK',url:'BLANK',image:porfolioImage10},
+export const portfolioItems: PortfolioItem[] = [
+  {title:'SipNSavor',description:'iOS app available on the App Store. Helps users explore beverages and flavors interactively, perfect for learning and enjoyment.',url:'https://apps.apple.com/us/app/sipnsavor/id6745084274',image:porfolioImage1},
+  {title:'AI-Sommelier',description:'AI-powered chatbot project for beverage recommendations and learning. Built with machine learning algorithms and accessible on GitHub.',url:'https://github.com/WaleyLin/AI-Sommelier',image:porfolioImage2},
+  {title:'Regular Expression to DFA Converter',description:'C++ command-line tool converting simplified regular expressions into deterministic finite automata (DFAs). Supports *, U, and grouping operators for educational automata learning.',url:'https://github.com/WaleyLin/regex-to-dfa-converter',image:porfolioImage3},
+  {title:'Pet Image Classifier (CNN)',description:'PyTorch Convolutional Neural Network classifying cat and dog images. Includes preprocessing, training, and evaluation with accuracy, recall, and precision metrics.',url:'https://github.com/WaleyLin/Convolutional-Networks',image:porfolioImage4},
+  {title:'Bitcoin Price Prediction (LSTM)',description:'Deep learning project predicting Bitcoin closing prices using historical high, low, and open prices. Implemented with PyTorch and LSTM networks.',url:'https://github.com/WaleyLin/Recurrent-Network',image:porfolioImage5},
+  {title:'Car Lock Reminder – iOS',description:'SwiftUI app that automatically detects driving and sends notifications to remind users to lock their car. Lightweight and privacy-conscious.',url:'https://github.com/WaleyLin/CarLockReminder-iOS',image:porfolioImage6},
+  {title:'TFT Comp Master',description:'Web app for Teamfight Tactics that recommends optimal team compositions for your matches.',url:'https://tft-comp-master.base44.app',image:porfolioImage7},
+  {title:'Fast Food Deals',description:'Responsive web app showcasing latest deals from top fast food restaurants. Users can filter and search dynamically with a clean, compact UI.',url:'https://github.com/WaleyLin/fastfooddeals',image:porfolioImage8},
+  {title:'Mini Game Pack',description:'Collection of fun, interactive mini-games built with HTML, CSS, and vanilla JavaScript. Play directly in the browser with no setup needed.',url:'https://github.com/WaleyLin/minigamepack',image:porfolioImage9},
+  {title:'Zombie Apocalypse Simulation',description:'C++ terminal-based simulation modeling a zombie outbreak with configurable infection, mutation, and strength parameters for educational fun.',url:'https://github.com/WaleyLin/zombie-apocalypse-simulation',image:porfolioImage10},
   {title:'Project title 11',description:'BLANK',url:'BLANK',image:porfolioImage11},
 ];
 

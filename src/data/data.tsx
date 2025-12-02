@@ -9,9 +9,7 @@ import{
 }from'@heroicons/react/24/outline';
 
 import GithubIcon from'../components/Icon/GithubIcon';
-import InstagramIcon from'../components/Icon/InstagramIcon';
 import LinkedInIcon from'../components/Icon/LinkedInIcon';
-import TwitterIcon from'../components/Icon/TwitterIcon';
 import heroImage from'../images/header-background.webp';
 import porfolioImage1 from'../images/portfolio/portfolio-1.jpg';
 import porfolioImage2 from'../images/portfolio/portfolio-2.jpg';
@@ -157,13 +155,10 @@ export const contact:ContactSection={
     {type:ContactType.Location,text:'Mesa, AZ',href:'https://www.google.com/maps/place/Mesa,+AZ/'},
     {type:ContactType.Github,text:'WaleyLin',href:'https://github.com/WaleyLin'},
     {type:ContactType.LinkedIn,text:'Waley Lin',href:'https://www.linkedin.com/in/waleylin2003'},
-    {type:ContactType.Instagram,text:'waaleylin',href:'https://www.instagram.com/waaleylin/'},
   ],
 };
 
 export const socialLinks:Social[]=[
   {label:'Github',Icon:GithubIcon,href:'https://github.com/WaleyLin'},
   {label:'LinkedIn',Icon:LinkedInIcon,href:'https://www.linkedin.com/in/waleylin2003'},
-  {label:'Instagram',Icon:InstagramIcon,href:'https://www.instagram.com/waaleylin/'},
-  {label:'Twitter',Icon:TwitterIcon,href:'BLANK'},
 ];

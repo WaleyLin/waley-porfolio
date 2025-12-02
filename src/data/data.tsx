@@ -87,38 +87,32 @@ export const aboutData:About={
 
 export const skills: SkillGroup[] = [
   {
-    name:'Languages & Core',
-    skills:[
+    name: 'Languages & Web Development',
+    skills: [
       {name:'Python',level:10},
       {name:'JavaScript',level:10},
       {name:'TypeScript',level:10},
       {name:'Java',level:10},
       {name:'C++',level:10},
       {name:'SQL',level:10},
-    ],
-  },
-  {
-    name:'Web Development',
-    skills:[
-      {name:'React.js',level:10},
-      {name:'React Native',level:10},
       {name:'HTML',level:10},
       {name:'CSS',level:10},
       {name:'Responsive Design',level:10},
       {name:'Tailwind CSS',level:10},
-      {name:'Axios',level:10},
+      {name:'React.js',level:10},
+      {name:'React Native',level:10},
       {name:'Node.js',level:10},
       {name:'Express.js',level:10},
       {name:'FastAPI',level:10},
       {name:'Flask',level:10},
       {name:'REST APIs',level:10},
-      {name:'JSON/API Integration',level:10},
-      {name:'Authentication Basics JWT/Firebase Auth',level:10},
+      {name:'JSON APIs',level:10},
+      {name:'Auth JWT/Firebase',level:10},
     ],
   },
   {
-    name:'Tools & Databases',
-    skills:[
+    name: 'Tools & Databases',
+    skills: [
       {name:'Firebase',level:10},
       {name:'SQLite',level:10},
       {name:'MongoDB',level:10},
@@ -137,12 +131,13 @@ export const skills: SkillGroup[] = [
       {name:'Seaborn',level:10},
       {name:'Expo',level:10},
       {name:'AWS',level:10},
-      {name:'Microsoft Azure',level:10},
+      {name:'Azure',level:10},
       {name:'Linux/Bash',level:10},
       {name:'Excel',level:10},
     ],
   },
 ];
+
 
 export const portfolioItems: PortfolioItem[] = [
   {title:'SipNSavor',description:'iOS app available on the App Store. Helps users explore beverages and flavors interactively, perfect for learning and enjoyment.',url:'https://apps.apple.com/us/app/sipnsavor/id6745084274',image:porfolioImage1},
